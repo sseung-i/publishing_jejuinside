@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+        <meta charset="utf-8">
+        <title>제주인싸이드</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+        <link href="css/mobile.css" rel="stylesheet" media="screen and (max-width:480px)">
+        <link href="css/tab.css" rel="stylesheet" media="screen and (min-width:481px) and (max-width:999px)">
+        <link href="css/desktop.css" rel="stylesheet" media="screen and (min-width:1000px)">
+        <script src="js/jquery-1.12.3.js"></script>
+        <script src="js/common.js"></script>
+    </head>
+    <body>
+        <a href="#container" id="gotop"></a>
+        <div id="container">
+            <header>
+                <div id="menuplus"></div>
+                <nav>
+                    <h1><a href="index.html"></a></h1>
+                    <ul class="mainmenu">
+                        <li><a href="#" class="ad">제주도</a>
+                            <ul class="sub">
+                                <li><a href="">제주스토리</a></li>
+                                <li><a href="">테마여행</a></li>
+                                <li><a href="">추천일정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="ad">먹고</a>
+                            <ul class="sub">
+                                <li><a href="">식사</a></li>
+                                <li><a href="">카페</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="ad">놀고</a>
+                            <ul class="sub">
+                                <li><a href="">포토존</a></li>
+                                <li><a href="">체험</a></li>
+                                <li><a href="">둘레길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="ad">자고</a>
+                            <ul class="sub">
+                                <li><a href="">호텔</a></li>
+                                <li><a href="">펜션</a></li>
+                                <li><a href="">게하</a></li>
+                                <li><a href="">캠핑</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="ad">사고</a>
+                            <ul class="sub">
+                                <li><a href="">특산품</a></li>
+                                <li><a href="">기념품</a></li>
+                                <li><a href="">시장</a></li>
+                                <li><a href="">면세점</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="submenu">
+                        <ul class="mypage">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">나만의제주</a></li>
+                        </ul>
+                        <ul class="weather">
+                            <h3 class="hidden">날씨</h3>
+                            <li><span>제주시</span><p class="weather_je"></p></li>
+                            <li><span>서귀포시</span><p class="weather_seo"></p></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="menu_cover"></div>
+            </header>
+            <section id="slide">
+                <h2 class="hidden">슬라이드</h1>
+                <div class="slide_cover">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <ul class="textbullet">
+                        <li>인기 키워드 : </li>
+                        <li class="slide_click">#보롬왓</li>
+                        <li>#가파도청보리밭</li>
+                        <li>#홍가시나무</li>
+                        <li>#투명카약</li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <form>
+                        <input type="search">
+                        <div></div>
+                    </form>
+                </div>
+            </section>
+            <section id="theme">
+                <h2>추천 테마여행</h2>
+                <div class="day">
+                    <h3>기간별</h3>
+                    <div>
+                        <div class="theme_prev">&lt;</div>
+                        <div class="theme_next">&gt;</div>
+                        <div class="day_cover">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <div class="tab_hidden">제주시 집중여행</div>
+                                    </div>
+                                    <div>
+                                        <div class="desktop_hidden">제주시 집중여행</div>
+                                        <ul>
+                                            <li>기간 : 2일</li>
+                                            <li>지역 : 제주도 북부</li>
+                                        </ul>
+                                        <p>제주공항 근처 맛집, 카페만 골라서 짧지만 알차게 다녀오는 제주여행</p>
+                                        <a href="#">일정 상세보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tab_hidden">제주도 감성캠핑</div>
+                                    </div>
+                                    <div>
+                                        <div class="desktop_hidden">제주도 감성캠핑</div>
+                                        <ul>
+                                            <li>기간 : 3일</li>
+                                            <li>지역 : 제주도 북동부</li>
+                                        </ul>
+                                        <p>여유롭게 제주도의 자연을 느끼며 캠핑을 해보는건 어떨까요?</p>
+                                        <a href="#">일정 상세보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tab_hidden">식도락 여행</div>
+                                    </div>
+                                    <div>
+                                        <div class="desktop_hidden">식도락 여행</div>
+                                        <ul>
+                                            <li>기간 : 4일</li>
+                                            <li>지역 : 제주도 남서부</li>
+                                        </ul>
+                                        <p>제주스러우면서도 요즘 가장 핫!한 맛집, 카페를 즐기는 코스</p>
+                                        <a href="#">일정 상세보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tab_hidden">전통시장투어</div>
+                                    </div>
+                                    <div>
+                                        <div class="desktop_hidden">전통시장투어</div>
+                                        <ul>
+                                            <li>기간 : 3일</li>
+                                            <li>지역 : 제주도 전체</li>
+                                        </ul>
+                                        <p>대표적인 전통시장 한곳을 하루에 한곳씩 시장근처의 관광과 식사까지 한번에~</p>
+                                        <a href="#">일정 상세보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tab_hidden">한달살이</div>
+                                    </div>
+                                    <div>
+                                        <div class="desktop_hidden">한달살이</div>
+                                        <ul>
+                                            <li>기간 : 30일</li>
+                                            <li>지역 : 제주도 전체</li>
+                                        </ul>
+                                        <p>한곳 또는 여러곳에서 머물며 한달간 제주에서 생활해보세요</p>
+                                        <a href="#">일정 상세보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tab_hidden">당일치기</div>
+                                    </div>
+                                    <div>
+                                        <div class="desktop_hidden">당일치기</div>
+                                        <ul>
+                                            <li>기간 : 1일</li>
+                                            <li>지역 : 제주도 북부</li>
+                                        </ul>
+                                        <p>쉬는날 아침부터 밤까지 일상에서 벗어나 힐링하고 가세요</p>
+                                        <a href="#">일정 상세보기</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="add_btn">더보기+</div>
+                    </div>
+                </div>
+                <div class="theme_bg"></div>
+                <div class="who">
+                    <h3>일행별</h3>
+                    <div>
+                        <div class="theme_prev">&lt;</div>
+                        <div class="theme_next">&gt;</div>
+                        <div>
+                            <div class="who_cover">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <div class="tab_hidden">연인과<br>추억사진 남기기</div>
+                                        </div>
+                                        <div>
+                                            <div class="desktop_hidden">연인과<br>추억사진 남기기</div>
+                                            <ul>
+                                                <li>기간 : 3일</li>
+                                                <li>지역 : 제주도 북동부</li>
+                                            </ul>
+                                            <p>제주의 아름다운 자연을 배경으로 둘만의 인생샷을 남겨보세요</p>
+                                            <a href="#">일정 상세보기</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="tab_hidden">효도여행<br>드라이브코스</div>
+                                        </div>
+                                        <div>
+                                            <div class="desktop_hidden">효도여행<br>드라이브코스</div>
+                                            <ul>
+                                                <li>기간 : 2일</li>
+                                                <li>지역 : 제주도 남부</li>
+                                            </ul>
+                                            <p>5월은 가정의달, 부모님과 함께 맛있는 음식과 드라이브 어떠신가요?</p>
+                                            <a href="#">일정 상세보기</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="tab_hidden">친구들과<br>뚜벅이 여행</div>
+                                        </div>
+                                        <div>
+                                            <div class="desktop_hidden">친구들과<br>뚜벅이 여행</div>
+                                            <ul>
+                                                <li>기간 : 3일</li>
+                                                <li>지역 : 제주도 남서부</li>
+                                            </ul>
+                                            <p>제주도 버스를 이용하며 북부지역 핫플만 골라 다니자!</p>
+                                            <a href="#">일정 상세보기</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="tab_hidden">해외인듯 해외아닌<br>신혼여행</div>
+                                        </div>
+                                        <div>
+                                            <div class="desktop_hidden">해외인듯 해외아닌<br>신혼여행</div>
+                                            <ul>
+                                                <li>기간 : 7일</li>
+                                                <li>지역 : 제주도 북동부</li>
+                                            </ul>
+                                            <p>해외느낌나는 장소만 골랐다! 스냅샷으로 여행앨범도 만들어봐요</p>
+                                            <a href="#">일정 상세보기</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="tab_hidden">어린아이들도<br>좋아하는 제주도</div>
+                                        </div>
+                                        <div>
+                                            <div class="desktop_hidden">어린아이들도<br>좋아하는 제주도</div>
+                                            <ul>
+                                                <li>기간 : 2일</li>
+                                                <li>지역 : 제주도 남부</li>
+                                            </ul>
+                                            <p>아이들이 좋아하는 숙소부터 음식점, 놀거리까지</p>
+                                            <a href="#">일정 상세보기</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="tab_hidden">애들아!<br>서핑하러가자</div>
+                                        </div>
+                                        <div>
+                                            <div class="desktop_hidden">애들아!<br>서핑하러가자</div>
+                                            <ul>
+                                                <li>기간 : 3일</li>
+                                                <li>지역 : 제주도 남서부</li>
+                                            </ul>
+                                            <p>친구들과 멋진 풍경에서 서핑도 즐기고 시원한 맥주한잔?!</p>
+                                            <a href="#">일정 상세보기</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="add_btn">더보기+</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="point">
+                <h2>제주도의 멋과맛</h2>
+                <p>제주도의 아름답운 명소와 맛좋은 특산물을 소개합니다</p>
+                <div class="place_cover">
+                    <div class="place_prev"></div>
+                    <div class="place_next"></div>
+                    <ul class="place_text">
+                       <li>
+                           <h3>#성산일출봉</h3>
+                           <p>주소 : 제주 서귀포시 안덕면 병악로 166 </p>
+                           <p><a href="#">자세히보기</a></p>
+                       </li>
+                       <li>
+                            <h3>#쇠소깍</h3>
+                            <p>주소 : 제주 서귀포시 쇠소깍로 104 </p>
+                            <p><a href="#">자세히보기</a></p>
+                        </li>
+                        <li>
+                            <h3>#이호테우해변</h3>
+                            <p>주소 : 제주 제주시 이호일동 </p>
+                            <p><a href="#">자세히보기</a></p>
+                        </li>
+                        <li>
+                            <h3>#천지연폭포</h3>
+                            <p>주소 : 제주 서귀포시 천지동 667-7 </p>
+                            <p><a href="#">자세히보기</a></p>
+                        </li>
+                    </ul>
+                    <div class="gradiant"></div>
+                    <div class="placeimg">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="foods">
+                    <div>
+                        <div class="foods_text">
+                            <ul>
+                                <li>
+                                    <h3>#제주흑돼지</h3>
+                                    <h3>#한라봉</h3>
+                                    <h3>#오메기떡</h3>
+                                    <h3>#고기국수</h3>
+                                    <h3>#빙떡</h3>
+                                </li>
+                                <li class="foods_prev">&lt;</li>
+                                <li class="foods_next">&gt;</li>
+                            </ul>
+                            <div>
+                                <p>
+                                    육질이 뛰어나고 비계 양이 적어 특유의 쫄깃함과 고소한 맛이 탁월합니다.
+                                    제주 스타일로 더 맛있게 먹는 방법은 두툼하게 자른 후
+                                    제주식 멸치젓인 ‘멜젓’에 찍어먹으면 돼지고기의
+                                    느끼함을 멜젓의 짭조름한 맛이 잡아주고, 감칠맛까지 살려주어 이만한 환상의 궁합이 없습니다.
+                                    <a href="#" class="jejugothic">상품보기</a>
+                                </p>
+                                <p>
+                                    한라봉은 옐로 푸드의 대표적인 감귤류 과일로 제주도의 특산물입니다.
+                                    꼭지의 생김새가 마치 한라산의 봉우리와 비슷하게 생겼다고 해서 붙여진 이름인 한라봉!
+                                    카르티노이드 성분이 들어 있어 뛰어난 항산화제로 알려져 있습니다.
+                                    <a href="#" class="jejugothic">상품보기</a>
+                                </p>
+                                <p>
+                                    차조가루를 익반죽을 하여 빚고 삶아서 고물을 묻힌 제주 지방 향토떡으로, 
+                                    제주 고유의 전통떡으로 '오메기'라는 말은 제주어로 '좁쌀'이란 뜻입니다.
+                                    팥, 쑥, 찹쌀, 차조 팥앙금의 다섯가지가 어우러져 맛을 내는 건강식입니다. 
+                                    <a href="#" class="jejugothic">상품보기</a>
+                                </p>
+                                <p>
+                                    삶은 건면에 돼지고기 육수를 넣고 돼지고기 수육을 얹은 국수로 제주만의 향토음식입니다.
+                                    마을의 잔칫날이나 큰 행사가 있던 날 즐겨먹던 음식으로 제주의 삶과 문화가
+                                    고스란히 담겨 있으며, 양념을 거의 쓰지 않고 재료 그대로의 담백하고 깔끔합니다.
+                                    <a href="#" class="jejugothic">상품보기</a>
+                                </p>
+                                <p>
+                                    메빌 반죽에 무채를 넣어 '빙빙 만다'고 해서 또는
+                                    '빙철(빙떡이나 전을 지질 때 사용하는 번철'에 짓는다 하여 빙떡이라 부르며 제주도의 향토음식입니다.
+                                    또 멍석처럼 말았다고 해서 '멍석떡'이라고도 불립니다.
+                                    짧은 시간에 적은 재료로 많은 양을 만들 수 있어 큰 일이 있을때 널리 사용됐습니다.
+                                    <a href="#" class="jejugothic">상품보기</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="foods_cover">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contents">
+                <div>
+                    <div class="movie">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/76H9QhTXf1A?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="banner_cover">
+                        <ul class="banner">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li><a href="#"><div id="content1"></div><p class="fontwhite">관광지도</p></a></li>
+                        <li><a href="#"><div id="content2"></div><p class="fontwhite">제주도 교통편</p></a></li>
+                        <li><a href="#"><div id="content3"></div><p class="fontwhite">가이드북</p></a></li>
+                        <li><a href="#"><div id="content4"></div><p class="fontwhite">전기차 충전소</p></a></li>
+                        <li><a href="#"><div id="content5"></div><p class="fontwhite">항공편 보러가기</p></a></li>
+                    </ul>
+                </div>
+                <div class="content_bg"></div>
+                <div class="notice">
+                    <ul>
+                        <li><img src="images/icon/notice.png" alt="공지아이콘"></li>
+                        <li>공지사항</li>
+                        <li>코로나19로인한 공공시설 이용 안내</li>
+                    </ul>
+                </div>
+            </section>
+            <footer>
+                <h2><img src="images/logo_gray.png" alt="로고"></h2>
+                <div>
+                    <ul class="bottom_menu">
+                        <li><a href="">제주시</a></li>
+                        <li><a href="">제주특별자치도청</a></li>
+                        <li><a href="">서귀포시</a></li>
+                        <li><a href="">공지사항</a></li>
+                    </ul>
+                    <p>
+                        (63122) 제주특별자치도 제주시 선덕로 23(연동) 제주웰컴센터<br>
+                        관광문의 : 제주관광공사 
+                        Tel : 064-740-6000~1  FAX : 064-740-6090<br>
+                        사업자등록번호 : 616-82-21432<br>
+                        관광불편신고 : 제주안내 120콜센터(국번없이 120번)<br>
+                    </p>
+                    <p>Copyright&copy;JEJU, inside Organization, All rights reserved.</p>
+                </div>
+                <div class="app">
+                    <p>App으로 다운받기</p>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/icon/android.png" alt="안드로이드"></a>
+                            <p>android</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/icon/ios.png" alt="ios"></a>
+                            <p>iso</p>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

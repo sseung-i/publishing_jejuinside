@@ -1,0 +1,647 @@
+@charset "utf-8";
+
+@import url(common.css);
+
+
+/* 헤더 */
+
+header {
+    width: 100%;
+    padding: 0 8.3%;
+}
+
+
+#menuplus {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.mainmenu {
+    float: right;
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.mainmenu>li {
+    width: 20%;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.mainmenu>li>a {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.4em;
+    text-shadow: 0 0 3px #000;
+    border-bottom: 5px solid rgba(225,225,225,0);
+}
+
+.sub_hover {
+    border-bottom: 5px solid #ef8031 !important;
+}
+
+
+.mainmenu>li>ul>li>a {
+    color: #727071;
+}
+
+.mainmenu>li>ul>li>a:hover {
+    color: #ef8031;
+}
+
+.submenu {
+    position: absolute;
+    top: 80px;
+    width: 47%;
+    height: 140px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.mypage {
+    float: left;
+    width: 285px;
+    height: 140px;
+    margin-right: 5%;
+    padding-top: 25px;
+    background: url(../images/login_bg.png) no-repeat center center;
+}
+
+.mypage>li>a {
+    display: block;
+    margin-left: 15%;
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+}
+
+.mypage>li:last-child>a {
+    margin-top: 10px;
+}
+
+.weather {
+    float: left;
+    min-width: 160px;
+    height: 140px;
+    background-color: #fff;
+    border: 1px solid #727071;
+    box-sizing: border-box;
+}
+
+.weather>li {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.weather>li:nth-child(2) {
+    border-bottom: 1px solid #727071;
+}
+
+.weather span {
+    display: inline-block;
+    width: 15px;
+    height: 60px;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    vertical-align: center;
+}
+
+.weather>li:nth-child(2)>span {
+    padding-top: 7px;
+}
+
+.menu_cover {
+    width: 100%;
+    height: 250px;
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+/* 슬라이드 */
+
+.slide_cover {
+    position: relative;
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+}
+
+.search {
+    position: absolute;
+    top: 300px;
+}
+
+.search>form {
+    width: 500px;
+    height: 50px;
+}
+
+.search>form>input {
+    width: 450px;
+    height: 50px;
+}
+
+.search>form>div {
+    width: 50px;
+    height: 50px;
+}
+
+.textbullet {
+    font-size: 1.5em;
+}
+
+.textbullet>li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slide_cover>div:nth-child(1) {
+    background: url(../images/slide/slide1.jpg) no-repeat content-box center;
+    background-size: 100%;
+}
+
+.slide_cover>div:nth-child(2) {
+    background: url(../images/slide/slide2.jpg) no-repeat content-box center;
+    background-size: 100%;
+}
+
+.slide_cover>div:nth-child(3) {
+    background: url(../images/slide/slide3.jpg) no-repeat content-box center;
+    background-size: 100%;
+}
+
+.slide_cover>div:nth-child(4) {
+    background: url(../images/slide/slide4.jpg) no-repeat content-box center;
+    background-size: 100%;
+}
+
+
+/* 추천 테마여행 */
+
+#theme>h2 {
+    font-size: 2.5em;
+}
+
+
+/* 기간별 , 일행별 공통 레이아웃 */
+
+.day, .who {
+    height: 500px;
+}
+
+.day>h3, .who>h3 {
+    font-size: 1.5em;
+}
+
+.desktop_hidden, .add_btn {
+    display: none;
+}
+
+
+.day>div:nth-child(2), .who>div:nth-child(2)  {
+    width: 975px;
+}
+
+.theme_prev, .theme_next {
+    width: 50px;
+    height: 50px;
+    font-size: 2.5em;
+    line-height: 50px;
+    top: 163px;
+}
+
+.theme_prev {
+    left: -10px;
+}
+
+.theme_next {
+    right: -10px;
+}
+
+.day_cover, .who_cover {
+    height: 394px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.day_cover>ul, .who_cover>ul {
+    width: 200%;
+    height: 390px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    position: absolute;
+}
+
+.day_cover>ul>li, .who_cover>ul>li {
+    width: 300px;
+    height: 390px;
+}
+
+.day_cover>ul>li>div:first-child, .who_cover>ul>li>div:first-child {
+    margin: 15px auto;
+    width: 240px;
+    height: 240px;
+    border-radius: 120px;
+    font-size: 1.4em;
+    overflow: hidden;
+}
+
+.day_cover>ul>li>div:first-child>div, .who_cover>ul>li>div:first-child>div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+.day_cover>ul>li>div:nth-child(2)>ul, .who_cover>ul>li>div:nth-child(2)>ul {
+    margin: 0 auto;
+}
+
+.day_cover>ul>li>div:nth-child(2)>ul>li, .who_cover>ul>li>div:nth-child(2)>ul>li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 0.9em;
+    margin-bottom: 7px;
+}
+
+.day_cover>ul>li>div:nth-child(2)>ul>li:last-child, .who_cover>ul>li>div:nth-child(2)>ul>li:last-child {
+    border-left: 1px solid #727071;
+    box-sizing: border-box;
+}
+
+.day_cover>ul>li>div:nth-child(2)>p, .who_cover>ul>li>div:nth-child(2)>p {
+    font-size: 0.9em;
+    width: 100%;
+    padding: 0 8.3%;
+}
+
+.day_cover>ul>li>div:nth-child(2)>a, .who_cover>ul>li>div:nth-child(2)>a {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #3f75b6;
+    border-top: 2px solid #3f75b6;
+}
+
+.day_cover>ul>li>div:nth-child(2)>a:hover, .who_cover>ul>li>div:nth-child(2)>a:hover {
+    background-color: #ef8031;
+    color: #fff;
+}
+
+
+/* 기간별 */
+
+.day_cover>ul>li>div:first-child>div {
+    line-height: 240px;
+}
+
+
+/* 일행별 */
+
+.who_cover>ul>li>div:first-child>div {
+    padding-top: 95px;
+    line-height: 1.3em;
+}
+
+
+/* 배경 */
+
+.theme_bg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-color: #3f75b6;
+    background-image: url(../images/white_topbg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: -1;
+    top: 0;
+    background-size: 100% 110px;
+}
+
+
+/* 멋과맛 */
+
+.place_prev, .place_next {
+    top: 130px;
+}
+
+.bullet {
+    display: none;
+}
+
+#point {
+    margin-top: 120px;
+}
+
+
+
+
+/* 맛 */
+
+.foods {
+    padding: 0 8.3%;
+}
+
+.foods_text {
+    position: relative;
+    margin-left: 10%;
+    width: 40%;
+    text-align: left;
+    z-index: 10;
+}
+
+.foods_text>ul {
+    width: 100%;
+    height: 50px;
+}
+
+.foods_text>ul>li {
+    float: left;
+    height: 50px;
+}
+
+.foods_text>ul>li>h3 {
+    font-size: 2em;
+    color: #000;
+}
+
+.foods_prev, .foods_next {
+    font-size: 2em;
+    color: #000;
+    line-height: 35px;
+    width: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.foods_prev:hover, .foods_next:hover {
+    color: #ef8031;
+}
+
+.foods_text>div {
+    width: 100%;
+    padding: 30px 25px;
+    border-radius: 30px 0 30px 30px;
+    line-height: 1.5em;
+    background-color: #fff;
+    box-shadow: 0 0 10px #727071;
+}
+
+.foods_text>div>p>a {
+    display: block;
+    margin-top: 20px;
+    width: 125px;
+    height: 30px;
+    /* border-radius: 15px; */
+    border: 1px solid #727071;
+    text-align: center;
+    line-height: 30px;
+}
+
+.foods_text>div>a:hover {
+    background-color: #ef8031;
+    color: #fff;
+    border: 0;
+}
+
+.foods_cover {
+    position: absolute;
+    top: -300px;
+    right: 5%;
+    width: 55%;
+    height: 600px;
+    min-width: 730px;
+}
+
+.foods_cover>div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+}
+
+.foods_cover>div:nth-child(1) {
+    background: url(../images/foods/foods1.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+.foods_cover>div:nth-child(2) {
+    background: url(../images/foods/foods2.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+.foods_cover>div:nth-child(3) {
+    background: url(../images/foods/foods3.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+.foods_cover>div:nth-child(4) {
+    background: url(../images/foods/foods4.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+.foods_cover>div:nth-child(5) {
+    background: url(../images/foods/foods5.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+
+/* 콘텐츠 */
+
+#contents {
+    width: 100%;
+    position: relative;
+    height: 570px;
+    margin-top: 100px;
+}
+
+
+#contents>div:nth-child(1) {
+    padding: 0 8.3%;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.movie {
+    float: left;
+    width: 56%;
+    height: 350px;
+    margin-right: 10px;
+    background-color: #ddd;
+}
+
+.banner_cover {
+    width: 350px;
+    overflow: hidden;
+}
+
+.banner {
+    width: 1560px;
+    height: 350px;
+}
+
+.banner>li {
+    float: left;
+}
+
+.banner>li>a {
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+}
+
+
+#contents>div:first-child>ul {
+    width: 100%;
+    height: 160px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#contents>div:first-child>ul>li {
+    width: 19%;
+    min-width: 150px;
+    height: 120px;
+}
+
+
+#contents>div:first-child>ul>li:nth-child(2), #contents>div:first-child>ul>li:nth-child(4) {
+    margin: 0 10px;
+}
+
+
+#contents>div:first-child>ul>li>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+#contents>div:first-child>ul>li>a>div {
+    width: 60px;
+    height: 60px;
+    margin: 15px auto 10px;
+}
+
+
+
+.notice>ul {
+    padding: 0 8.3%;
+}
+
+.content_bg {
+    background-size: 100% 110px;
+    height: 450px;
+}
+
+
+
+/* 풋터 */
+
+footer {
+    width: 100%;
+    height: 230px;
+    padding: 50px 8.3%;
+}
+
+footer>h2 {
+    float: left;
+    width: 20%;
+    min-width: 180px;
+    height: 180px;
+}
+
+footer>div {
+    float: left;
+    width: 60%;
+    height: 180px;
+}
+
+.bottom_menu {
+    margin-bottom: 10px;
+}
+
+.bottom_menu>li {
+    display: inline;
+}
+
+.bottom_menu>li>a {
+    margin-right: 10px;
+}
+
+footer>div>p {
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
+footer>div>p:last-child {
+    margin-top: 10px;
+}
+
+.bottom_menu>li>a:hover {
+    color: #ef8031;
+}
+
+.app {
+    float: right;
+    width: 132px;
+    height: 180px;
+    text-align: center;
+}
+
+.app>p {
+    width: 100%;
+}
+
+.app>ul {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.app>ul>li {
+    float: left;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.app>ul>li:nth-child(1) {
+    margin-right: 10px;
+}
+
+.app>ul>li>a>img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}

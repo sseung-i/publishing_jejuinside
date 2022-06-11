@@ -1,0 +1,585 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+
+.nanumsquare, .day_cover>ul>li>div:nth-child(2)>ul, .day_cover>ul>li>div:nth-child(2)>p, .who_cover>ul>li>div:nth-child(2)>ul, .who_cover>ul>li>div:nth-child(2)>p, .foods_text>div{
+    font-family: 'NanumSquare', '나눔스퀘어','나눔 고딕','나눔고딕',sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #727071;
+}
+
+body, .jejugothic {
+    font-family: 'Jeju Gothic','JejuGothicOTF', 'NanumSquare', '나눔스퀘어','나눔 고딕','나눔고딕',sans-serif;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hidden {
+    position: absolute;
+    left: -9999999px;
+    font-size: 0px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+#container {
+    width: 100%;
+}
+
+#gotop {
+    display: inline-block;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    background: url("../images/icon/top.png") no-repeat;
+    background-size: 100%;
+}
+
+#gotop:hover {
+    background-image: url("../images/icon/top_h.png");
+}
+
+
+/* 헤더 */
+
+nav>h1>a {
+    display: inline-block;
+    width: 200px;
+    height:60px;
+    margin-top: 5px;
+    background: url(../images/logo.png) no-repeat 0 0;
+    position: absolute;
+    z-index: 200;
+}
+
+
+.mypage>li>a:hover {
+    background-color: #ef8031;
+    color: #fff;
+}
+
+
+
+/* 슬라이드 */
+
+
+#slide {
+    width: 100%;
+}
+
+.search {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search>form {
+    display: inline-block;
+    background-color: #fff;
+}
+
+.search>form>input {
+    border: 3px solid #ef8031;
+    float: left;
+}
+
+.search>form>div {
+    border: 3px solid #ef8031;
+    border-left: 0;
+    float: left;
+    cursor: pointer;
+    background: url(../images/icon/search.png) no-repeat center center;
+}
+
+.slide_cover>ul {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-top: 370px;
+}
+
+.slide_cover>ul>li {
+    padding: 5px 10px;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.slide_cover>ul>li:first-child {
+    cursor:default;
+}
+
+.slide_cover>ul>li:nth-child(n+2):hover {
+    color: #ef8031;
+}
+
+/* 슬라이드 해당 위치 표시 */
+
+.slide_click {
+    background-color: rgba(255,255,255,0.8);
+    color: #ef8031 !important;
+    border: 2px solid #ef8031 ;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.slide_cover>div, .slide_cover>ul {
+    position: absolute;
+}
+
+.slide_cover>div {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 추천 테마여행 */
+
+#theme {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-top: 80px;
+}
+
+#theme>h2 {
+    color: #fff;
+}
+
+
+
+/* 기간별 , 일행별 공통 레이아웃 */
+
+.day, .who {
+    padding-top: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+.day>h3 {
+    color: #fff;
+    margin-bottom: 23px;
+}
+
+.day>div:nth-child(2), .who>div:nth-child(2)  {
+    margin: 0 auto;
+    position: relative;
+}
+
+.theme_prev, .theme_next {
+    position: absolute;
+    background-color: #fff;
+    color: #3f75b6;
+    border-radius: 34px;
+    border: 2px solid #3f75b6;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.day_cover>ul>li, .who_cover>ul>li {
+    z-index: 1; /* 안쓰면 커서 안생김*/
+    background-color: #fff;
+    border: 2px solid #3f75b6;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+.day_cover>ul>li:nth-child(1)>div:first-child{
+    background: url(../images/theme/day1.png) no-repeat center center;
+}
+
+.day_cover>ul>li:nth-child(2)>div:first-child{
+    background: url(../images/theme/day2.png) no-repeat center center;
+}
+
+.day_cover>ul>li:nth-child(3)>div:first-child{
+    background: url(../images/theme/day3.png) no-repeat center center;
+}
+
+.day_cover>ul>li:nth-child(4)>div:first-child{
+    background: url(../images/theme/day4.png) no-repeat center center;
+}
+
+.day_cover>ul>li:nth-child(5)>div:first-child{
+    background: url(../images/theme/day5.png) no-repeat center center;
+}
+
+.day_cover>ul>li:nth-child(6)>div:first-child{
+    background: url(../images/theme/day6.png) no-repeat center center;
+}
+
+
+/* 일행별 */
+
+.who {
+    text-align: center;
+    background-color: #fff;
+}
+
+.who>h3 {
+    color: #3f75b6;
+    margin-bottom: 23px;
+}
+
+/* .who_cover>ul>li>div>div {
+    padding-top: 95px;
+    line-height: 1.3em;
+ } */
+ 
+ .who_cover>ul>li:nth-child(1)>div:first-child {
+     background: url(../images/theme/who1.png) no-repeat center center;
+ }
+ 
+ .who_cover>ul>li:nth-child(2)>div:first-child {
+     background: url(../images/theme/who2.png) no-repeat center center;
+ }
+ 
+ .who_cover>ul>li:nth-child(3)>div:first-child {
+     background: url(../images/theme/who3.png) no-repeat center center;
+ }
+ 
+ .who_cover>ul>li:nth-child(4)>div:first-child {
+     background: url(../images/theme/who4.png) no-repeat center center;
+ }
+ 
+ .who_cover>ul>li:nth-child(5)>div:first-child {
+     background: url(../images/theme/who5.png) no-repeat center center;
+ }
+ 
+ .who_cover>ul>li:nth-child(6)>div:first-child {
+     background: url(../images/theme/who6.png) no-repeat center center;
+ }
+
+
+ /* 멋과맛 */
+
+#point {
+    width: 100%;
+    text-align: center;
+}
+
+#point>h2 {
+    display: inline-block;
+    width: 100%;
+    font-size: 2.5em;
+    color: #727071;
+}
+
+#point>p {
+    margin-top: 20px;
+}
+
+#point>div {
+    margin-top: 35px;
+}
+
+.place_cover {
+    width: 100%;
+    height: 650px;
+    position: relative;
+}
+
+.place_prev, .place_next {
+    position: absolute;
+    width: 30px;
+    height: 300px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.place_prev {
+    background-image: url(../images/white_prev.png);
+    background-repeat: no-repeat;
+    left: 50px;
+}
+
+.place_prev:hover {
+    background-image: url(../images/white_prev_h.png);
+}
+
+.place_next {
+    background-image: url(../images/white_next.png);
+    background-repeat: no-repeat;
+    right: 50px;
+}
+
+.place_next:hover {
+    background-image: url(../images/white_next_h.png);
+}
+
+.place_text {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.place_text>li {
+    top: 120px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.place_text>li>h3 {
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 0 0 3px #000;
+}
+
+.place_text>li>p:nth-child(2) {
+    display: inline-block;
+    padding: 3px 20px;
+    margin-top: 10px;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+}
+
+.place_text>li>p:nth-child(3)>a {
+    display: inline-block;
+    margin-top: 20px;
+    width: 125px;
+    height: 30px;
+    line-height: 32px;
+    background-color: #fff;
+    color: #000;
+}
+
+.place_text>li>p:nth-child(3)>a:hover {
+    background-color: #ef8031;
+    color: #fff;
+}
+
+.placeimg>div {
+    position: absolute;
+    top: 0;
+}
+
+.gradiant {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background: url(../images/place/gradiant.png) repeat-x content-box content-box;
+}
+
+.placeimg>div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/place/place1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+.placeimg>div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/place/place2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+.placeimg>div:nth-child(3) {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/place/place3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+.placeimg>div:nth-child(4) {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/place/place4.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+
+/* 맛 */
+
+.foods {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -20px;
+}
+
+.foods_text>ul {
+    position: relative;
+}
+
+
+.foods_text>ul>li:first-child>h3 {
+    position: absolute;
+    top: 0;
+}
+
+.foods_prev {
+    position: absolute;
+    right: 40px;
+}
+
+.foods_next {
+    position: absolute;
+    right: 0;
+}
+
+
+/* 콘텐츠 */
+
+.banner>li {
+    position: absolute;
+}
+
+
+.banner>li:nth-child(1)>a {
+    background: url(../images/bottom_bn/banner1.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.banner>li:nth-child(2)>a {
+    background: url(../images/bottom_bn/banner2.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.banner>li:nth-child(3)>a {
+    background: url(../images/bottom_bn/banner3.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.banner>li:nth-child(4)>a {
+    background: url(../images/bottom_bn/banner4.png) no-repeat center center;
+    background-size: 100%;
+}
+
+
+#contents>div:first-child>ul>li>a:hover {
+    background-color: #ef8031;
+}
+
+#contents>div:first-child>ul>li>a:hover .fontwhite {
+    color: #fff;
+}
+
+#content1 {
+    background: url(../images/icon/content1.png) no-repeat center center ;
+}
+
+#contents>div>ul>li>a:hover #content1 {
+    background: url(../images/icon/content1_h.png) no-repeat center center ;
+}
+
+#content2 {
+    background: url(../images/icon/content2.png) no-repeat center center ;
+}
+
+#contents>div>ul>li>a:hover #content2 {
+    background: url(../images/icon/content2_h.png) no-repeat center center ;
+}
+
+#content3 {
+    background: url(../images/icon/content3.png) no-repeat center center;
+}
+
+#contents>div>ul>li>a:hover #content3 {
+    background: url(../images/icon/content3_h.png) no-repeat center center ;
+}
+
+#content4 {
+    background: url(../images/icon/content4.png) no-repeat center center ;
+}
+
+#contents>div>ul>li>a:hover #content4 {
+    background: url(../images/icon/content4_h.png) no-repeat center center ;
+}
+
+#content5 {
+    background: url(../images/icon/content5.png) no-repeat center center ;
+}
+
+#contents>div>ul>li>a:hover #content5 {
+    background: url(../images/icon/content5_h.png) no-repeat center center ;
+}
+
+.notice {
+    width: 100%;
+    height: 38px;
+    background-color: #000;
+}
+
+.notice>ul>li {
+    color: #fff;
+    float: left;
+    line-height: 40px;
+}
+
+.notice>ul>li:nth-child(1)>img {
+    margin-top: 5px;
+    width: 28px;
+}
+
+.notice>ul>li:nth-child(1) {
+    width: 5%;
+}
+
+.notice>ul>li:nth-child(2) {
+    width: 15%;
+}
+
+.notice>ul>li:nth-child(3) {
+    width: 60%;
+}
+
+.content_bg {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background-color: #459a88;
+    background-image: url(../images/white_bottombg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: -1;
+}
+
+
+/* 풋터 */
+
+footer {
+    background-color: #e6e6e6;
+}

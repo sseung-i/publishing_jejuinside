@@ -1,0 +1,675 @@
+@charset "utf-8";
+
+@import url(common.css);
+
+
+/* 헤더 */
+
+header {
+    width: 100%;
+    padding: 0 5%;
+}
+
+
+nav>h1>a {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    background: url(../images/logo.png) no-repeat 0 0;
+    background-size: 180px;
+    position: relative;
+    z-index: 200;
+}
+
+#menuplus {
+    position: relative;
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/icon/menu.png) no-repeat center center ;
+    cursor: pointer;
+    float: right;
+    z-index: 100;
+}
+
+
+.mainmenu {
+    display: none;
+}
+
+.submenu {
+    display: none;
+}
+
+
+
+/* 슬라이드 */
+
+.slide_cover {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+
+.slide_cover>ul {
+    top: -250px;
+    font-size: 1.2em;
+    padding: 0 20%;
+}
+
+.search>form {
+    width: 90%;
+    height: 45px;
+    margin-top: 20px;
+}
+
+.search>form>input {
+    width: 80%;
+    height: 45px;
+}
+
+.search>form>div {
+    width: 20%;
+    height: 45px;
+}
+
+.slide_click {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.slide_cover>ul>li {
+    margin: 5px 0;
+    font-size: 0.8em;
+}
+
+.slide_cover>ul>span {
+    display: inline-block;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}
+
+.slide_cover>div:nth-child(1) {
+    background: url(../images/slide/slide1_h.jpg) no-repeat content-box center;
+    background-size: 100%;
+}
+
+.slide_cover>div:nth-child(2) {
+    background: url(../images/slide/slide2_h.jpg) no-repeat content-box center;
+    background-size: 100%;
+}
+
+.slide_cover>div:nth-child(3) {
+    background: url(../images/slide/slide3_h.jpg) no-repeat content-box center;
+    background-size: 100%;
+}
+
+.slide_cover>div:nth-child(4) {
+    background: url(../images/slide/slide4_h.jpg) no-repeat content-box center;
+    background-size: 100%;
+}
+
+
+/* 추천 테마여행 */
+
+#theme {
+    padding: 80px 5% 0;
+}
+
+/* 테마 배경 */
+
+.theme_bg {
+    top: 0;
+    background-size: 100% 70px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3f75b6;
+    z-index: -1;
+}
+
+#theme>h2 {
+    font-size: 2em;
+}
+
+.theme_prev, .theme_next {
+    display: none;
+}
+
+
+/* 기간별 일행별 공통*/
+
+.tab_hidden {
+    display: none;
+}
+
+.day_cover>ul>li, .who_cover>ul>li {
+    width: 100%;
+    height: 170px;
+    padding: 3%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.day_cover>ul>li>div:nth-child(1), .who_cover>ul>li>div:nth-child(1) {
+    width: 45%;
+    height: 100%;
+    margin-right: 3%;
+}
+
+.day_cover>ul>li>div:nth-child(2), .who_cover>ul>li>div:nth-child(2) {
+    position: relative;
+    padding-top: 5px;
+    width: 55%;
+    height: 100%;
+    text-align: left;
+}
+
+.day_cover>ul>li>div:nth-child(2)>div, .who_cover>ul>li>div:nth-child(2)>div {
+    font-size: 1.05em;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+}
+
+.day_cover>ul>li>div:nth-child(2)>ul, .who_cover>ul>li>div:nth-child(2)>ul {
+    display: none;
+}
+
+
+.day_cover>ul>li>div:nth-child(2)>p, .who_cover>ul>li>div:nth-child(2)>p {
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    line-height: 1.3em;
+}
+
+.day_cover>ul>li>div:nth-child(2)>a, .who_cover>ul>li>div:nth-child(2)>a {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    color: #3f75b6;
+    font-size: 0.8em;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #3f75b6;
+}
+
+
+.day_cover>ul>li>div:nth-child(2)>a:hover, .who_cover>ul>li>div:nth-child(2)>a:hover {
+    background-color: #ef8031;
+    border: 2px solid #ef8031;
+    color: #fff;
+}
+
+.add_btn {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0.8em;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* 기간별 */
+
+.day_cover>ul>li:nth-child(1)>div:first-child{
+    background: url(../images/theme/day1_tab.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.day_cover>ul>li:nth-child(2)>div:first-child{
+    background: url(../images/theme/day2_tab.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.day_cover>ul>li:nth-child(3)>div:first-child{
+    background: url(../images/theme/day3_tab.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.day_cover>ul>li:nth-child(4)>div:first-child{
+    background: url(../images/theme/day4_tab.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.day_cover>ul>li:nth-child(5)>div:first-child{
+    background: url(../images/theme/day5_tab.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.day_cover>ul>li:nth-child(6)>div:first-child{
+    background: url(../images/theme/day6_tab.png) no-repeat center center;
+    background-size: 100%;
+}
+
+
+
+/* 일행별 */
+
+.who {
+    text-align: center;
+    background-color: #3f75b6;
+    padding-bottom: 50px;
+}
+
+.who>h3 {
+    color: #fff;
+    margin-bottom: 23px;
+}
+
+.who_cover>ul>li:nth-child(1)>div:first-child {
+    background: url(../images/theme/who1_tab.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.who_cover>ul>li:nth-child(2)>div:first-child {
+    background: url(../images/theme/who2.png) no-repeat center center;
+}
+
+.who_cover>ul>li:nth-child(3)>div:first-child {
+    background: url(../images/theme/who3.png) no-repeat center center;
+}
+
+.who_cover>ul>li:nth-child(4)>div:first-child {
+    background: url(../images/theme/who4.png) no-repeat center center;
+}
+
+.who_cover>ul>li:nth-child(5)>div:first-child {
+    background: url(../images/theme/who5.png) no-repeat center center;
+}
+
+.who_cover>ul>li:nth-child(6)>div:first-child {
+    background: url(../images/theme/who6.png) no-repeat center center;
+}
+
+
+
+
+/* 멋과맛 */
+
+#point {
+    padding-top: 100px;
+}
+
+#point>h2 {
+    display: inline-block;
+    width: 100%;
+    font-size: 2em;
+    color: #727071;
+}
+
+#point>p {
+    margin-top: 20px;
+    padding: 0 10%;
+    line-height: 1.3em;
+}
+
+
+.place_prev, .place_next {
+    top: 50px;
+} 
+
+.place_prev {
+    left: 20px;
+}
+
+.place_next {
+    right: 20px;
+}
+
+.placeimg>div {
+    background-size: 250%;
+}
+
+.place_cover {
+    width: 100%;
+    height: 430px;
+    position: relative;
+}
+
+.place_text>li>p:nth-child(3)>a {
+    display: inline-block;
+    margin-top: 20px;
+    width: 110px;
+    height: 25px;
+    line-height: 27px;
+    background-color: #fff;
+    color: #000;
+    font-size: 0.8em;
+}
+
+
+
+.gradiant {
+    display: none;
+}
+
+
+/* 맛 */
+
+.foods {
+    padding: 0 5%;
+}
+
+.foods>div {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+
+.foods_prev, .foods_next {
+    font-size: 2em;
+    color: inherit;
+    line-height: 35px;
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+
+.foods_prev:hover, .foods_next:hover {
+    color: #ef8031;
+}
+
+.foods_prev {
+    left: 0;
+}
+
+.foods_next {
+    right: 0;
+}
+
+
+.foods_text {
+    position: absolute;
+    z-index: 10;
+    top: 340px;
+    padding: 0 5%;
+}
+
+
+.foods_text>ul h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.foods_text>ul>li:first-child>h3 {
+    position: relative;
+}
+
+.foods_text>div {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+
+.foods_text>div>p>a {
+    display: block;
+    width: 110px;
+    height: 25px;
+    border: 1px solid #727071;
+    text-align: center;
+    line-height: 27px;
+    margin: 20px auto 0;
+}
+
+.foods_text>div>p>a:hover {
+    background-color: #ef8031;
+    color: #fff;
+    border: 0;
+}
+
+.foods_cover {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 350px;
+}
+
+.foods_cover>div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 360px;
+    max-width: 430px;
+}
+
+.foods_cover>div:nth-child(1) {
+    background: url(../images/foods/foods1.png) no-repeat center bottom;
+    background-size: 100%;
+}
+
+.foods_cover>div:nth-child(2) {
+    background: url(../images/foods/foods2.png) no-repeat center bottom;
+    background-size: 100%;
+}
+
+.foods_cover>div:nth-child(3) {
+    background: url(../images/foods/foods3.png) no-repeat center bottom;
+    background-size: 100%;
+}
+
+.foods_cover>div:nth-child(4) {
+    background: url(../images/foods/foods4.png) no-repeat center bottom;
+    background-size: 100%;
+}
+
+.foods_cover>div:nth-child(5) {
+    background: url(../images/foods/foods5.png) no-repeat center bottom;
+    background-size: 100%;
+}
+
+
+
+
+/* 콘텐츠 */
+
+#contents {
+    width: 100%;
+    position: relative;
+    height: 880px;
+    margin-top: 100px;
+}
+
+.movie {
+    width: 100%;
+    height: 300px;
+    background-color: #ddd;
+}
+
+.banner_cover {
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.banner {
+    width: 1200px;
+    height: 350px;
+}
+
+.banner>li>a {
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+}
+
+
+#contents>div:first-child>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+#contents>div:first-child>ul>li {
+    float: left;
+    width: 33.33%;
+    height: 95px;
+}
+
+#contents>div:first-child>ul>li:nth-child(2),#contents>div:first-child>ul>li:nth-child(3),#contents>div:first-child>ul>li:nth-child(5) {
+    border-left: 1px solid #459a88;
+}
+
+
+#contents>div:first-child>ul>li:nth-child(4), #contents>div:first-child>ul>li:nth-child(5) {
+    width: 50%;
+    border-top: 1px solid #459a88;
+}
+
+#contents>div:first-child>ul>li>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+
+#contents>div:first-child>ul>li>a>div {
+    width: 60px;
+    height: 60px;
+    margin: 5px auto;
+}
+
+#content1, #content2, #content3, #content4, #content5, #content6 {
+    background-size: 80%;
+}
+
+#contents>div>ul>li>a:hover #content1 {
+    background-size: 80%;
+}
+
+#contents>div>ul>li>a:hover #content2 {
+    background-size: 80%;
+}
+
+#contents>div>ul>li>a:hover #content3 {
+    background-size: 80%;
+}
+
+#contents>div>ul>li>a:hover #content4 {
+    background-size: 80%;
+}
+
+#contents>div>ul>li>a:hover #content5 {
+    background-size: 80%;
+}
+
+#contents>div>ul>li>a:hover #content6 {
+    background-size: 80%;
+}
+
+.content_bg {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background-color: #459a88;
+    height: 750px;
+    z-index: -1;
+}
+
+.notice {
+    font-size: 0.8em;
+}
+
+.notice>ul>li:nth-child(1) {
+    width: 10%;
+}
+
+.notice>ul>li:nth-child(2) {
+    width: 18%;
+}
+
+.notice>ul>li:nth-child(3) {
+    width: 72%;
+}
+
+
+.notice>ul {
+    padding: 0 5%;
+}
+
+
+/* 풋터 */
+
+footer {
+    width: 100%;
+    height: 100%;
+    padding: 50px 10% 0;
+    text-align: center;
+}
+
+footer>h2 {
+    margin: 30px auto;
+    width: 180px;
+}
+
+footer>div {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom_menu {
+    margin-bottom: 10px;
+}
+
+.bottom_menu>li {
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+.bottom_menu>li>a {
+    margin-right: 10px;
+}
+
+footer>div>p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+footer>div>p:last-child {
+    margin-top: 10px;
+}
+
+.bottom_menu>li>a:hover {
+    color: #ef8031;
+}
+
+
+.app {
+    margin: 30px auto 0;
+    width: 132px;
+    height: 180px;
+    text-align: center;
+}
+
+.app>p {
+    width: 100%;
+}
+
+.app>ul {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.app>ul>li {
+    float: left;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.app>ul>li:nth-child(1) {
+    margin-right: 10px;
+}
+
+.app>ul>li>a>img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
